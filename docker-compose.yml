@@ -1,0 +1,14 @@
+services:
+	clearoutside-scraper:
+		build: .
+		ports:
+			- "2880:2880"
+		environment:
+			PORT: "2880"
+			CACHE_DURATION: "30m"
+			HTTP_TIMEOUT: "15s"
+		healthcheck:
+			test: ["CMD", "/clearoutside-scraper", "--healthcheck"]
+			interval: 30s
+			timeout: 5s
+			retries: 3
