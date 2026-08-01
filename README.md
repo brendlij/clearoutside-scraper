@@ -40,6 +40,8 @@ GET /forecast?lat=52.52&lon=13.40
 
 `/forecast` returns a provider-neutral JSON document containing location details, seven daily forecasts, hourly ratings, cloud coverage, wind, visibility, fog, temperature, humidity, dew point, pressure, precipitation, moon, sun, and darkness details.
 
+See the [forecast response example](docs/forecast-response-example.md) for a representative JSON payload.
+
 ## Configuration
 
 | Variable | Default | Description |
